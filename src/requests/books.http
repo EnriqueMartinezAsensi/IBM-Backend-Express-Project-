@@ -1,0 +1,35 @@
+GET http://localhost:5000/books/
+
+###
+GET http://localhost:5000/books/isbn/1
+
+###
+GET http://localhost:5000/books/author/George Orwell
+
+###
+GET http://localhost:5000/books/title/Don Quixote
+
+
+
+
+###
+GET http://localhost:5000/books/reviews/1
+
+###
+POST http://localhost:5000/books/reviews/1
+Content-Type: application/json
+
+{
+  "review" : "Wonderfull book!"
+}
+
+###
+PUT http://localhost:5000/books/reviews/1
+Content-Type: application/json
+
+{
+  "review" : "REALLY wonderfull book!"
+}
+
+###
+DELETE http://localhost:5000/books/reviews/1
